@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sinatra Template</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
+<head>
+  <title>Random Name Generator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+* {
+  font-family: sans-serif;
+}
+body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color:rgb(109, 164, 236);
+      display: flex;
+      justify-content: center;
+}
+.banner-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+  border-radius: 128px;
+}
+.thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  object-fit: cover;
+}
 
-  <body>
+.name {
+  color: #fffffe;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fffffe;
+  text-decoration: none;
+}
+
+.link {
+  background-color: #ffffff;
+  display: flex;
+  align-items:center ;
+  border-radius: 48px;
+  padding: 10px 10px;
+}
+
+.link a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+</style>
+
+  <div class="container mt-4">
     <%= yield %>
-  </body>
+  </div>
+</body>
 </html>
